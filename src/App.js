@@ -6,7 +6,10 @@ function App() {
 
 function updateCity (event) {
  setCity(event.target.value);
-};
+}
+function handleSubmit (event) {
+event.preventDefault();
+}
 
 
   return (
@@ -21,15 +24,16 @@ function updateCity (event) {
           </ul>
         </div>
       </header>
-    <div>
+      <main>
     
-    <form>
+    <form onSubmit={handleSubmit}>
 <input type="search" placeholder="Enter a city"
 value={city}
  onChange={updateCity} />
 <button type="submit" > Search </button>
     </form>
-    </div>
+    
+    </main>
     </div>
   );
 }
