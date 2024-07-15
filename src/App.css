@@ -1,11 +1,23 @@
 .App {
   font-family: sans-serif;
+  align-items: center;
 }
 .App-header {
+  text-align: left;
   background: rgb(219, 219, 192);
   width:800px;
   height:800px;
+  font-size: 15px;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 8px;
   
+}
+.container {
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-left: 10px;
 }
 .weather-data {
   color: red;
@@ -16,14 +28,6 @@ align-items: center;
 color: pink;
 }
 
-.search-form-input {
-  color: black;
-  width: 300px;
-  height: 35px;
-  font-size: 16px;
-  border-radius: 4px 0 0 4px;
-  padding: 0 10px;
-}
 .search-form-submit {
   height: 35px;
   width: 300px;
@@ -32,14 +36,29 @@ color: pink;
   padding: 0 10px;
   margin: 20px;
 }
+
+.search-form-input {
+  color: rgb(18, 17, 17);
+  width: 100px;
+  height: 35px;
+  font-size: 16px;
+  border-radius: 4px 0 0 4px;
+  padding: 0 10px;
+  margin: 20px;
+}
+
 span {
   color: blue;
 }
 h1 {
   color: black;
+  font-size: 50px;
+  text-align:start;
 }
 p {
   color: black;
+  font-size: 25px;
+  text-align: start;
 }
 .temps {
   color: green;
@@ -50,10 +69,25 @@ p {
 }
 .temperature {
   display: flex;
+  justify-content: space-evenly;
+  margin: 50px;
+  padding: 5px 10px;
+  text-align: left;
+
 }
 .temp-data {
   display: flex;
+  font-size: 25px;
   margin: 0 auto;
   padding: 20px 35px;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+.description {
+  font-size: 20px;
+  font-size: 25px;
+  
+}
+footer {
+  margin: 10px;
+  opacity: 0.6;
 }
